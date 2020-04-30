@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+      <xs:element name="WorkingDay">
+            <xs:complexType>
+                  <xs:sequence>
+                        <xs:element name="RoundNum" type="xs:int"></xs:element>
+                        <xs:element name="RoundSetting">
+                              <xs:complexType>
+                                    <xs:sequence>
+                                          <xs:element name="round" maxOccurs="3" minOccurs="3">
+                                                <xs:complexType>
+                                                      <xs:sequence>
+                                                            <xs:element name="end" type="xs:int"></xs:element>
+                                                            <xs:element name="cleardate">
+                                                                  <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                              <xs:extension base="xs:string">
+                                                                                    <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                              </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="clearround" type="xs:int"></xs:element>
+                                                            <xs:element name="svclist" type="xs:int"></xs:element>
+                                                            <xs:element name="exchgstate" type="xs:int"></xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="no" type="xs:int"></xs:attribute>
+                                                </xs:complexType>
+                                          </xs:element>
+                                    </xs:sequence>
+                              </xs:complexType>
+                        </xs:element>
+                  </xs:sequence>
+            </xs:complexType>
+      </xs:element>
+</xs:schema>

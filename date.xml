@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB18030"?>
+<WorkingDay>
+    <RoundNum>3</RoundNum>
+    <RoundSetting>
+        <round no="1">
+            <end>083000</end>
+            <cleardate type="absolute">20190111</cleardate>
+            <clearround>1</clearround>
+            <svclist>1100</svclist>
+            <exchgstate>1</exchgstate>
+        </round>
+        <round no="2">
+            <end>110000</end>
+            <cleardate type="absolute">20190111</cleardate>
+            <clearround>2</clearround>
+            <svclist>1100</svclist>
+            <exchgstate>1</exchgstate>
+        </round>
+        <round no="3">
+            <end>153000</end>
+            <cleardate type="absolute">20190111</cleardate>
+            <clearround>3</clearround>
+            <svclist>1100</svclist>
+            <exchgstate>1</exchgstate>
+        </round>
+    </RoundSetting>
+</WorkingDay>
